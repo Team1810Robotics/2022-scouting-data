@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Compiler/src"/>
+	<classpathentry kind="src" path="Importer/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="Compiler/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Importer/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/JavaLibraries/commons-csv-1.9.0/commons-csv-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/JavaLibraries/commons-lang3-3.12.0/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
