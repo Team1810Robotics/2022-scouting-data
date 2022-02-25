@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook original-version='18.1' source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='scouting2020exportandroid_id' inline='true' name='federated.1vnbcio0q7y07e1bkfbl4176de46' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='scouting2020exportandroid_id' name='textscan.1xn95ts0umfs0j15n1q4u0crwl5b'>
+            <connection class='textscan' directory='C:/Users/julie/Desktop' filename='scouting2020exportandroid_id.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1xn95ts0umfs0j15n1q4u0crwl5b' name='scouting2020exportandroid_id.csv' table='[scouting2020exportandroid_id#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='MatchId' ordinal='0' />
+            <column datatype='integer' name='TeamId' ordinal='1' />
+            <column datatype='string' name='AllianceColor' ordinal='2' />
+            <column datatype='integer' name='StartupBalls' ordinal='3' />
+            <column datatype='boolean' name='PassedAutoLine' ordinal='4' />
+            <column datatype='integer' name='AutoPowerCellsLower' ordinal='5' />
+            <column datatype='integer' name='AutoPowerCellsOuter' ordinal='6' />
+            <column datatype='real' name='AutoPowerCellsInner' ordinal='7' />
+            <column datatype='integer' name='TeleopPowerCellsLower' ordinal='8' />
+            <column datatype='integer' name='TeleopPowerCellsOuter' ordinal='9' />
+            <column datatype='integer' name='TeleopPowerCellsInner' ordinal='10' />
+            <column datatype='boolean' name='TeleopCanSpinWheel' ordinal='11' />
+            <column datatype='boolean' name='TeleopCanChooseCorrectColor' ordinal='12' />
+            <column datatype='string' name='TeleopStageReached' ordinal='13' />
+            <column datatype='string' name='GrabBarPosition' ordinal='14' />
+            <column datatype='boolean' name='Won' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MatchId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MatchId]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>MatchId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeamId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TeamId]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeamId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AllianceColor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AllianceColor]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>AllianceColor</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StartupBalls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StartupBalls]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>StartupBalls</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PassedAutoLine</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[PassedAutoLine]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>PassedAutoLine</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoPowerCellsLower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoPowerCellsLower]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>AutoPowerCellsLower</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoPowerCellsOuter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AutoPowerCellsOuter]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>AutoPowerCellsOuter</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AutoPowerCellsInner</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AutoPowerCellsInner]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>AutoPowerCellsInner</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeleopPowerCellsLower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TeleopPowerCellsLower]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeleopPowerCellsLower</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeleopPowerCellsOuter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TeleopPowerCellsOuter]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeleopPowerCellsOuter</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeleopPowerCellsInner</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TeleopPowerCellsInner]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeleopPowerCellsInner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeleopCanSpinWheel</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[TeleopCanSpinWheel]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeleopCanSpinWheel</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeleopCanChooseCorrectColor</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[TeleopCanChooseCorrectColor]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeleopCanChooseCorrectColor</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TeleopStageReached</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TeleopStageReached]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>TeleopStageReached</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrabBarPosition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GrabBarPosition]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>GrabBarPosition</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Won</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Won]</local-name>
+            <parent-name>[scouting2020exportandroid_id.csv]</parent-name>
+            <remote-alias>Won</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Alliance Color' datatype='string' name='[AllianceColor]' role='dimension' type='nominal' />
+      <column caption='Auto Power Cells Inner' datatype='real' name='[AutoPowerCellsInner]' role='measure' type='quantitative' />
+      <column caption='Auto Power Cells Lower' datatype='integer' name='[AutoPowerCellsLower]' role='measure' type='quantitative' />
+      <column caption='Auto Power Cells Outer' datatype='integer' name='[AutoPowerCellsOuter]' role='measure' type='quantitative' />
+      <column caption='Score_Auto' datatype='real' name='[Calculation_1042583330580029440]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[AutoPowerCellsLower]* 2 + [AutoPowerCellsInner] * 6 + [AutoPowerCellsOuter] * 6' />
+      </column>
+      <column caption='Score_Teleop' datatype='integer' name='[Calculation_1042583330581151745]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[TeleopPowerCellsLower] * 1 + [TeleopPowerCellsInner] * 3 + [TeleopPowerCellsOuter] * 2' />
+      </column>
+      <column caption='Totoal_Score' datatype='real' name='[Calculation_1042583330583556098]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [PassedAutoLine] then 5 else 0 END&#13;&#10;+&#13;&#10;[Calculation_1042583330580029440]&#13;&#10;+&#13;&#10;[Calculation_1042583330581151745]&#13;&#10;+&#13;&#10;if [TeleopCanSpinWheel] then 10 else 0 END&#13;&#10;+&#13;&#10;if [TeleopCanChooseCorrectColor] then 20 else 0 END&#13;&#10;+&#13;&#10;if [GrabBarPosition] = &apos;High&apos; or [GrabBarPosition] = &apos;Middle&apos; then 25 else 0 END' />
+      </column>
+      <column caption='Grab Bar Position' datatype='string' name='[GrabBarPosition]' role='dimension' type='nominal' />
+      <column caption='Match Id' datatype='integer' name='[MatchId]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Passed Auto Line' datatype='boolean' name='[PassedAutoLine]' role='dimension' type='nominal' />
+      <column caption='Startup Balls' datatype='integer' name='[StartupBalls]' role='measure' type='quantitative' />
+      <column caption='Team Id' datatype='integer' name='[TeamId]' role='dimension' type='ordinal' />
+      <column caption='Teleop Can Choose Correct Color' datatype='boolean' name='[TeleopCanChooseCorrectColor]' role='dimension' type='nominal' />
+      <column caption='Teleop Can Spin Wheel' datatype='boolean' name='[TeleopCanSpinWheel]' role='dimension' type='nominal' />
+      <column caption='Teleop Power Cells Inner' datatype='integer' name='[TeleopPowerCellsInner]' role='measure' type='quantitative' />
+      <column caption='Teleop Power Cells Lower' datatype='integer' name='[TeleopPowerCellsLower]' role='measure' type='quantitative' />
+      <column caption='Teleop Power Cells Outer' datatype='integer' name='[TeleopPowerCellsOuter]' role='measure' type='quantitative' />
+      <column caption='Teleop Stage Reached' datatype='string' name='[TeleopStageReached]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52' measure-ordering='alphabetic' measure-percentage='0.48' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Total Scores'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scouting2020exportandroid_id' name='federated.1vnbcio0q7y07e1bkfbl4176de46' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vnbcio0q7y07e1bkfbl4176de46'>
+            <column caption='Auto Power Cells Inner' datatype='real' name='[AutoPowerCellsInner]' role='measure' type='quantitative' />
+            <column caption='Auto Power Cells Lower' datatype='integer' name='[AutoPowerCellsLower]' role='measure' type='quantitative' />
+            <column caption='Auto Power Cells Outer' datatype='integer' name='[AutoPowerCellsOuter]' role='measure' type='quantitative' />
+            <column caption='Score_Auto' datatype='real' name='[Calculation_1042583330580029440]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[AutoPowerCellsLower]* 2 + [AutoPowerCellsInner] * 6 + [AutoPowerCellsOuter] * 6' />
+            </column>
+            <column caption='Score_Teleop' datatype='integer' name='[Calculation_1042583330581151745]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[TeleopPowerCellsLower] * 1 + [TeleopPowerCellsInner] * 3 + [TeleopPowerCellsOuter] * 2' />
+            </column>
+            <column caption='Totoal_Score' datatype='real' name='[Calculation_1042583330583556098]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if [PassedAutoLine] then 5 else 0 END&#13;&#10;+&#13;&#10;[Calculation_1042583330580029440]&#13;&#10;+&#13;&#10;[Calculation_1042583330581151745]&#13;&#10;+&#13;&#10;if [TeleopCanSpinWheel] then 10 else 0 END&#13;&#10;+&#13;&#10;if [TeleopCanChooseCorrectColor] then 20 else 0 END&#13;&#10;+&#13;&#10;if [GrabBarPosition] = &apos;High&apos; or [GrabBarPosition] = &apos;Middle&apos; then 25 else 0 END' />
+            </column>
+            <column caption='Grab Bar Position' datatype='string' name='[GrabBarPosition]' role='dimension' type='nominal' />
+            <column caption='Passed Auto Line' datatype='boolean' name='[PassedAutoLine]' role='dimension' type='nominal' />
+            <column caption='Team Id' datatype='integer' name='[TeamId]' role='dimension' type='ordinal' />
+            <column caption='Teleop Can Choose Correct Color' datatype='boolean' name='[TeleopCanChooseCorrectColor]' role='dimension' type='nominal' />
+            <column caption='Teleop Can Spin Wheel' datatype='boolean' name='[TeleopCanSpinWheel]' role='dimension' type='nominal' />
+            <column caption='Teleop Power Cells Inner' datatype='integer' name='[TeleopPowerCellsInner]' role='measure' type='quantitative' />
+            <column caption='Teleop Power Cells Lower' datatype='integer' name='[TeleopPowerCellsLower]' role='measure' type='quantitative' />
+            <column caption='Teleop Power Cells Outer' datatype='integer' name='[TeleopPowerCellsOuter]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1042583330583556098]' derivation='Avg' name='[avg:Calculation_1042583330583556098:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TeamId]' derivation='None' name='[none:TeamId:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1042583330583556098]' derivation='Sum' name='[sum:Calculation_1042583330583556098:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vnbcio0q7y07e1bkfbl4176de46].[avg:Calculation_1042583330583556098:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1vnbcio0q7y07e1bkfbl4176de46].[sum:Calculation_1042583330583556098:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1vnbcio0q7y07e1bkfbl4176de46].[none:TeamId:ok]</rows>
+        <cols>([federated.1vnbcio0q7y07e1bkfbl4176de46].[avg:Calculation_1042583330583556098:qk] + [federated.1vnbcio0q7y07e1bkfbl4176de46].[sum:Calculation_1042583330583556098:qk])</cols>
+      </table>
+      <simple-id uuid='{21EFF341-F7DB-4844-9BEF-72EF342D41F9}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Total Scores'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vnbcio0q7y07e1bkfbl4176de46].[:Measure Names]</field>
+            <field>[federated.1vnbcio0q7y07e1bkfbl4176de46].[none:TeamId:ok]</field>
+            <field>[federated.1vnbcio0q7y07e1bkfbl4176de46].[sum:Calculation_1042583330580029440:qk]</field>
+            <field>[federated.1vnbcio0q7y07e1bkfbl4176de46].[sum:Calculation_1042583330581151745:qk]</field>
+            <field>[federated.1vnbcio0q7y07e1bkfbl4176de46].[sum:Calculation_1042583330583556098:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CBF6528D-7C44-4551-96C7-43B52CA36EC3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Total Scores' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
